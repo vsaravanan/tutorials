@@ -1,7 +1,10 @@
+// import TreeView from '@/components/TreeView/TreeView'
+
 const Index = () => {
   return (
     <>
-      <h1> Welcome to NextJs</h1>
+      {/* <App></App> */}
+      This is Index
     </>
   )
 }
