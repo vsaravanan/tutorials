@@ -1,10 +1,11 @@
 // import TreeView from '@/components/TreeView/TreeView'
 
+import { Counter } from '@/components/counter/counter'
+
 const Index = () => {
   return (
     <>
-      {/* <App></App> */}
-      This is Index
+      <Counter></Counter>
     </>
   )
 }
