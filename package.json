@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch db.json --port 4000"
+    "json-server": "json-server --watch db.json --port 4000",
+    "both": "concurrently \"next dev\" \" yarn json-server   \" "
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
+    "concurrently": "^8.2.1",
     "next": "13.5.4",
     "next-redux-wrapper": "^8.1.0",
     "react": "^18",
