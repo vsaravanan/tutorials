@@ -3,6 +3,7 @@ import { configureStore } from '@reduxjs/toolkit'
 // import { composeWithDevTools } from 'redux-devtools-extension'
 // import { applyMiddleware } from '@reduxjs/toolkit'
 // import counterReducer from 'redux/reducers/counterSlice'
+import reducer from '@/store/postSlice'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 
@@ -23,6 +24,7 @@ export const store = configureStore(
     reducer: {
       // [api.reducerPath]: api.reducer,
       // counter: counterReducer,
+      posts: reducer,
     },
     middleware: middlewares,
   },
